@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="generator" content="Hugo 0.29" />
+
+  <meta charset="utf-8">
+  <meta name="description" content="{{ .Page.Description }}">
+
+  <meta name="keywords" content="{{ .Page.Keywords }}">
+
+  {{ partial "global/head.html"}}
+
+  <title>{{ .Page.Title }}</title>
+
+</head>
+
+<body>
+{{ partial "global/nav.html"  }}
+
+<section class="wrap-md-t">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12 wrap-md-b">
+        <h1 class="title divider">{{ $.Page.Params.Headline }}</h1>
+
+        {{ if $.Page.Params.Subheadline }}
+        <p>{{ $.Page.Params.Subheadline }}</p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ partial "greenplum/greenplum-menu.html" . }}
+
+
+
+{{ .Content }}
+
+
+
+
+
+
+
+{{ partial "global/footer.html" . }}
+{{ partial "global/script.html" . }}
+</body>
+
+</html>

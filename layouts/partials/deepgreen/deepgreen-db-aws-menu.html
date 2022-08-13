@@ -1,0 +1,5 @@
+<ul class="nav nav-stacked bg-lt-grey f-nav">
+  {{ $subPage := .URL }}
+  <li><a {{if eq $subPage "/products/deepgreen-db/aws/"}}class="active"{{end}} href="/products/deepgreen-db/aws"><small>Launch</small></a></li>
+  <li><a {{if eq $subPage "/products/deepgreen-db/aws/beta/"}}class="active"{{end}} href="/products/deepgreen-db/aws/beta"><small>Beta</small></a></li>
+</ul>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="generator" content="Hugo 0.29" />
+
+  <meta charset="utf-8">
+  <meta name="description" content="Vitesse Data Customer Support">
+
+  <meta name="keywords" content="[Customer Support]">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href='../css/lib/bootstrap.css'>
+
+<link rel="stylesheet" href='../css/font.css'>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<link rel="stylesheet" href='../css/app.css'>
+
+<link rel="icon" type="image/png" href='../img/favicon.png'>
+
+
+
+
+  <title>Vitesse Data | Support</title>
+
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top">
+  <div class="container-fluid">
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../"><img src="../img/logoname.svg" alt="Vitesse data logo"></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Products</strong> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href='../products/deepgreen-db'>Deepgreen DB</a></li>
+            <li><a href='../products/open-source-greenplum'>Open-source Greenplum</a></li>
+            <li><a href='../products/apache-geode'>Apache Geode</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>Solutions</strong> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href='../solutions/video-discoveries'>Video Discovery</a></li>
+
+          </ul>
+        </li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href='../about-us'><strong>About Us</strong></a></li>
+        <li><a href='../blog' class=""><strong>Blog</strong></a></li>
+        <li><a href='../support' class=""><strong>Support</strong></a></li>
+      </ul>
+    </div>
+    
+  </div>
+  
+</nav>
+
+
+
+
+<section class="wrap-md-t">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12 wrap-md-b">
+        <h1 class="title divider">Support</h1>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<div class="img-banner banner bg-one banner-sm">
+    <div class="banner-wrap">
+
+    </div>
+  </div>
+
+<section class="">
+  <div class="container">
+    <div class="row wrap-md">
+      <div class="col-md-9 col-md-8">
+      <p class="h6 title">To request E-mail support, please fill in the form below to initiate a new case.</p>
+        <form class="form-horizontal form" method="POST" name="Contact-support" action="" id="contact-support">
+          <!--  Hidden values start-->
+          <input type="hidden" name="Form" value="Support">
+
+          <input type="hidden" name="_next" value="../support-submission">
+
+          <input type="hidden" name="_subject" value="Support submission">
+
+          <input type="hidden" name="_format" value="plain">
+
+          <!--  Hidden values end-->
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-12">
+                <select name="product" id='product' class="form-control input-lg" required>
+                <option value="none" disabled="" selected="">Select product</option>
+                <option value="Deepgreen DB">Deepgreen DB</option>
+                <option value="Open-source Greenplum">Open-source Greenplum</option>
+                <option value="Apache Geode">Apache Geode</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-6">
+                <input class="form-control input-lg" name="Name" id="name" type="text" placeholder="Name" required>
+              </div>
+
+              <div class="col-md-6">
+                <input class="form-control input-lg" name="Phone" id="phone" type="tel" placeholder="Phone" value="">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-6">
+                <input class="form-control input-lg" name="Email" id="email" type="email" placeholder="Email" value="" required>
+              </div>
+
+              <div class="col-md-6">
+                <input class="form-control input-lg" name="Company" id="company" type="text" placeholder="Company" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-12">
+                <textarea class="form-control" name="Issue" id="issue" cols="60" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-12">
+                <input name="" id="submit" type="submit" class="btn btn-lg btn-primary" onClick="submitToSupport()">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3 col-lg-3 col-lg-offset-1">
+        <hr>
+        <small>For other pressing issues, please call the number below and leave a message. Our support engineers will respond within 4 hours.</small>
+
+        <a href="tel:+16504342338" class="btn btn-link highlight btn-lg  btn-block"><strong class=""><i class="fas fa-phone"></i> +1 (650) 434-2338</strong></a>
+        <hr>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-dark text-white b-top-highlight">
+  <div class="container-fluid wrap wrap-md">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center">
+          <small>Copyright &copy; 2020 Vitesse Data, Inc.
+&bull; <a href='../privacy/'><u>Privacy</u></a>
+</small>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src='../js/vendor/jquery.js'></script>
+
+  <script src='../js/vendor/bootstrap.min.js'></script>
+
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+
+  <script src='../js/script.js'></script>
+  
+
+
+
+
+</body>
+
+</html>

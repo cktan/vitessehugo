@@ -1,0 +1,42 @@
+<section class="">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+
+        <ul class="list-inline nav nav-justified subNav">
+          {{ $currentPage := .URL }}
+
+          <li><a
+                 {{if eq $currentPage "/products/deepgreen-db/"}}class="active"{{end}}
+                 href="/products/deepgreen-db/">Performance</a>
+          </li>
+
+          <li><a
+                 {{if in $currentPage "/products/deepgreen-db/features" }}class="active"
+                 {{end}}
+
+                 href="/products/deepgreen-db/features/deepgreen-db-matrix">Features</a>
+          </li>
+          
+          <li><a
+                 {{if in $currentPage "/products/deepgreen-db/xdrive"}}class="active"{{end}}
+                 href="/products/deepgreen-db/xdrive">Xdrive</a>
+          </li>
+
+          <li><a
+                 {{if in $currentPage "aws"}}class="active"{{end}}
+                 href="http://aws.amazon.com/marketplace/pp/B078NJQTT2">AWS</a>
+          </li>
+          
+          <li><a
+                 {{if in $currentPage "download"}}class="active"{{end}}
+                 href="/products/deepgreen-db/download">Download</a>
+          </li>
+
+      </ul>
+
+      </div>
+    </div>
+  </div>
+</section>

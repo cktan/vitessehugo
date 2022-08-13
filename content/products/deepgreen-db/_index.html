@@ -1,0 +1,91 @@
+---
+layout: db-page
+
+description: Vitesse Data Deepgreen DB
+title: Deepgreen DB
+keywords: deepgreen db
+
+headline: Deepgreen DB
+
+---
+
+
+<section class="wrap-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-lg-8">
+        <h2 class="title">Performance</h2>
+        <p class="">Vitesse Deepgreen DB is a scalable MPP data warehouse solution derived from the open source <a href="http://greenplum.org">Greenplum Database Project</a>. While maintaining 100% compatibility with the open source GPDB project, Deepgreen DB has a next-genaration query processor enhanced with (1) better join and aggregation algorithms, (2) new subsystem to handle spills, and (3) advanced techniques that maximize CPU performance through JIT-compiled query execution, vectorized scans, and data-path optimization.</p>
+
+      </div>
+
+      <div class="col-md-3 col-lg-3 col-lg-offset-1">
+        {{<contact-sales>}}
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="container">
+  <hr>
+    <div class="row text-center ">
+        <h3 class="title">TPC-H 10G Results</h3>
+        <p class="">
+          All 22 queries of TPC-H are measured against Greenplum DB and Deepgreen DB. Q1 and Q5 are specifically graphed below for comparisons.
+        </p>
+    </div>
+    <div class="row wrap-sm">
+      <div class="col-md-4">
+        <div class="b-top-highlight-lt">
+          <h4 class="highlight h6 title text-center">All Results</h4>
+          <button type="button" class="btn" data-toggle="modal" data-target=".raw-result"><img src="/img/tpch.png" class="img-responsive center-block" alt="Compare Greenplum DB and Deepgreen DB using Heap Tables"></button>
+          <p>Raw result: Deepgreen DB vs Greenplum DB using Heap Tables</p>
+          <div class="modal fade raw-result" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <img src="/img/tpch.png" class="img-responsive center-block" alt="Compare Greenplum DB and Deepgreen DB using Heap Tables">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="b-top-highlight-lt">
+          <h4 class="highlight h6 title text-center">Q1: Scan and aggregate fact table</h4>
+            <button class="btn" data-toggle="modal" data-target=".q1"><img src="/img/q1.png" class="img-responsive center-block" alt="Q1 is a typical aggregate query running against the fact table"/></button>
+            <p>Q1 is a typical aggregate query running against the fact table.</p>
+
+
+            <div class="modal fade q1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <img src="/img/q1.png" class="img-responsive center-block" alt="Q1 is a typical aggregate query running against the fact table"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="b-top-highlight-lt">
+          <h4 class="highlight h6 title text-center">Q5: 6-way-join</h4>
+            <button class="btn" data-toggle="modal" data-target=".q5"><img src="/img/q5.png" class="img-responsive center-block" alt="Q5: 6-way-join" /></button>
+             <p>Q5 is an aggregate over a <em>6-way hashjoin</em> that joins the fact table
+                  <code>lineitem</code> table against the
+                  <code>orders</code> and <code>supplier</code> tables, and subsequently against other dimension tables. </p>
+            <div class="modal fade q5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <img src="/img/q5.png" class="img-responsive center-block" alt="Q5: 6-way-join" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+

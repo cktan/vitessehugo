@@ -1,0 +1,53 @@
+---
+layout: db-download-page
+
+description: Description for Deepgreen-db page
+title: Deepgreen DB | Download page
+keywords: Keywords for Deepgreen-db page
+
+headline: Deepgreen DB
+
+---
+
+<!-- *********************************************************** 
+
+     NOTE: this page comes from packages.html.src 
+
+     *********************************************************** -->
+
+<h2 class="title">Download</h2>
+
+<div class="well">
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active"><a href="#v18" aria-controls="v18" role="tab" data-toggle="tab"><font size='120%'><strong>V18</strong></font></a></li>
+    <li role="presentation"><a href="#v16" aria-controls="v16" role="tab" data-toggle="tab"><font size='120%'><strong>V16</strong></font></a></li>
+  </ul>
+  <hr>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="v18">
+
+      <h5>Deepgreen DB 18.x is compatible with Greenplum 5.x</h5>
+      <br/>
+
+      V18V18V18
+
+    </div>
+
+    <div role="tabpanel" class="tab-pane " id="v16">
+
+      <h5>Deepgreen DB 16.x is compatible with Greenplum 4.x</h5>
+      <br/>
+      
+      V16V16V16
+
+    </div>
+  </div>
+
+</div>
+
+
+<hr>
+

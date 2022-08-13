@@ -1,0 +1,18 @@
+To download hugo on ubuntu16: 
+
+	sudo snap install hugo
+
+To run a local server: make server
+
+	make server
+	# on browser, go to http://localhost:1313/
+
+To generate all pages: 
+
+	make gen
+
+To push to vitessedata.github.io: 
+
+	make push
+
+

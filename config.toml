@@ -1,0 +1,34 @@
+#baseUrl = ""
+
+relativeURLs = true
+
+#baseURL = "http://cktan.us/vitessehugo/"
+#baseURL = "cktan.github.io/vitessehugo/"
+
+languageCode = "en-us"
+
+title = "Vitesse Data"
+
+publishDir = "docs"
+
+disableKinds = ["sitemap", "RSS"]
+
+#pygmentsUseClassic = true
+
+pygmentsCodeFences = true
+
+paginate = 4
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[params]
+
+  description = "Vitesse DB is PostgreSQL for BI/OLAP/Data Warehouse/DataMart. Runs postgres more than 180X faster. Scans at 15+GB/s. Utilizes LLVM JIT, multi-core parallel query execution, column store."
+
+  keywords = "DW data-warehouse data-mart BI olap analytics."
+
+  salesemail = "sales@vitessedata.com"
+  supportemail = "support@vitessedata.com"
+  

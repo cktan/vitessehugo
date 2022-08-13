@@ -1,0 +1,101 @@
+---
+layout: index
+description: Vitesse Data Customer Support
+title: Vitesse Data | Support
+keywords: Customer Support
+
+headline: Support
+
+---
+
+{{< page-headline >}}
+
+<div class="img-banner banner bg-one banner-sm">
+    <div class="banner-wrap">
+
+    </div>
+  </div>
+
+<section class="">
+  <div class="container">
+    <div class="row wrap-md">
+      <div class="col-md-9 col-md-8">
+      <p class="h6 title">To request E-mail support, please fill in the form below to initiate a new case.</p>
+        <form class="form-horizontal form" method="POST" name="Contact-support" action="" id="contact-support">
+          <!--  Hidden values start-->
+          <input type="hidden" name="Form" value="Support">
+
+          <input type="hidden" name="_next" value="../support-submission">
+
+          <input type="hidden" name="_subject" value="Support submission">
+
+          <input type="hidden" name="_format" value="plain">
+
+          <!--  Hidden values end-->
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-12">
+                <select name="product" id='product' class="form-control input-lg" required>
+                <option value="none" disabled="" selected="">Select product</option>
+                <option value="Deepgreen DB">Deepgreen DB</option>
+                <option value="Open-source Greenplum">Open-source Greenplum</option>
+                <option value="Apache Geode">Apache Geode</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-6">
+                <input class="form-control input-lg" name="Name" id="name" type="text" placeholder="Name" required>
+              </div>
+
+              <div class="col-md-6">
+                <input class="form-control input-lg" name="Phone" id="phone" type="tel" placeholder="Phone" value="">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-6">
+                <input class="form-control input-lg" name="Email" id="email" type="email" placeholder="Email" value="" required>
+              </div>
+
+              <div class="col-md-6">
+                <input class="form-control input-lg" name="Company" id="company" type="text" placeholder="Company" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-12">
+                <textarea class="form-control" name="Issue" id="issue" cols="60" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="form-group">
+              <div class="col-md-12">
+                <input name="" id="submit" type="submit" class="btn btn-lg btn-primary" onClick="submitToSupport()">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-3 col-lg-3 col-lg-offset-1">
+        <hr>
+        <small>For other pressing issues, please call the number below and leave a message. Our support engineers will respond within 4 hours.</small>
+
+        <a href="tel:+16504342338" class="btn btn-link highlight btn-lg  btn-block"><strong class=""><i class="fas fa-phone"></i> +1 (650) 434-2338</strong></a>
+        <hr>
+
+
+
+      </div>
+    </div>
+  </div>
+</section>

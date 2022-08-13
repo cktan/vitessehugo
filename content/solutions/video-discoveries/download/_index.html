@@ -1,0 +1,56 @@
+---
+layout: video-discoveries-page
+description: Deepgreen DB for Video Discoveries
+title: Deepgreen DB for Video Discoveries
+keywords: video deepgreen
+
+headline: Deepgreen DB for Video Discoveries
+
+---
+
+
+<section class="wrap-md">
+  <div class="container">
+    <div class="row">
+	<p>The Deepgreen DB for Video Discoveries is distributed in a docker 
+	image hosted on dockerhub. Follow the instructions below to download
+	and install.</p>
+
+	<p>First, create a network in docker:</p>
+
+<pre>
+docker network create --subnet=172.20.0.0/16 dgnet
+</pre>
+
+	<p>Next, run the following command to start the docker.</p>
+
+
+<pre>
+
+sudo docker run -it --rm --hostname=dg --net=dgnet \
+	--ip=172.20.0.16 -p 8888:8888 \
+	--privileged -w /opt/ml-suite \
+	-v /dev:/dev -v /opt/xilinx:/opt/xilinx	\
+	--env PLATFORM=alveo-u200				\
+	vitessedata/deepgreen-ml:latest \
+	/bin/bash -c 'cd /home/mluser/quicksetup && git remote update && git rebase origin/master &&  bash docker/start.sh' 
+</pre>
+
+       <p>To initialize the demo:</p>
+
+<pre>
+cd docker/
+bash ./runnb.sh 
+</pre>
+
+	<hr/>
+
+	<p>The previous command will launch a Jupyter notebook. Please follow the steps in the Jupyter notebook to explore the demo.</p>
+
+        <p><img src="/img/jupyter.png" style="width:auto;height=auto"></p>
+
+
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,8 @@
+/static/download/
+*~
+*.swp
+.DS_Store
+/_draft-content/
+/_draft-lay-outs/
+/_docs/
+docs

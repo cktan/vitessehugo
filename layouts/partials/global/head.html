@@ -1,0 +1,16 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href='{{ "/css/lib/bootstrap.css" | relURL}}'>
+
+<link rel="stylesheet" href='{{ "/css/font.css" | relURL }}'>
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+<link rel="stylesheet" href='{{ "/css/app.css" | relURL }}'>
+
+<link rel="icon" type="image/png" href='{{ "/img/favicon.png" | relURL }}'>
+
+{{ if .IsHome }}
+{{ partial "structured-data/home.html" }}
+{{ end }}

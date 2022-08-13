@@ -1,0 +1,46 @@
+---
+layout: video-discoveries-page
+description: Deepgreen DB for Video Discoveries
+title: Deepgreen DB for Video Discoveries
+keywords: video deepgreen
+
+headline: Deepgreen DB for Video Discoveries
+
+---
+
+
+<section class="wrap-md">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-lg-8">
+        <p>The ubiquitous cameras have produced a deluge of video files. Combining
+        distributed data processing capability of a fast Data Warehouse and the online ML inferencing capability of 
+	the Xilinx Alveo FPGA card, Deepgreen DB for Video Discoveries is a platform that
+	enables live tagging of video files.</p>
+
+	<p><img src="/img/video-tagging.png" style="width:90%;height=auto"></p>
+
+        <p>The platform provides a powerful and convenient standard SQL environment conducive to
+	practical data warehouse operations and, in addition, incorporates primitives that unleash 
+	the power of Xilinx Alveo and ML Suite on video files.</p>
+
+	<p>Depending on the amount of data/video and query speed required, the Deepgreen DB platform can be
+	scaled out horizontally or vertically by adding compute nodes or Xilinx Alveo resources.</p>
+
+	<p><img src="/img/deepgreen-alveo.png" style="width:90%;height=auto"></p>
+
+	<p>Video files are distributed evenly among the Segment Nodes in the picture above. When the 
+	user submits a SQL query, Deepgreen DB splits the query into jobs that it dishes out to the 
+	Segment Nodes. Each Segment Node then executes the jobs and processes the video
+	files residing locally in parallel, utilizing the Alveo resources attached to it. This way,
+	a query multiplies its capability in scanning mp4 files by the number of Segment Nodes and 
+	Alveo cards available in the cluster.</p>
+
+      </div>
+      <div class="col-lg-3 col-lg-offset-1 col-md-3">
+        {{<contact-sales>}}
+        <hr>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="generator" content="Hugo 0.29" />
+
+  <meta charset="utf-8">
+  <meta name="description" content="{{ .Page.Description }}">
+
+  <meta name="keywords" content="{{ .Page.Keywords }}">
+
+  {{ partial "global/head.html" .}}
+
+  <title>{{ .Page.Title }}</title>
+
+</head>
+
+<body>
+{{ partial "global/nav.html"  }}
+
+
+{{ .Content }}
+
+
+{{ partial "global/footer.html" . }}
+{{ partial "global/script.html" . }}
+</body>
+
+</html>

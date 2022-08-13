@@ -1,0 +1,6 @@
+<ul class="nav nav-stacked bg-lt-grey f-nav">
+  {{ $subPage := .URL }}
+  <li><a {{if eq $subPage "/products/deepgreen-db/download/"}}class="active"{{end}} href="/products/deepgreen-db/download"><small>Packages</small></a></li>
+  <li><a {{if in $subPage "/install"}}class="active"{{end}} href="/products/deepgreen-db/download/install"><small>Install</small></a></li>
+  <li><a {{if in $subPage "/beta"}}class="active"{{end}} href="/products/deepgreen-db/download/beta"><small>Beta</small></a></li>
+</ul>

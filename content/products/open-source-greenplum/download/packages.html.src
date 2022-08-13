@@ -1,0 +1,39 @@
+---
+layout: greenplum-download-page
+
+description: Description for Open-source Greenplum page
+title: Open-source Greenplum
+keywords: Keywords for Open-source Greenplum page
+
+headline: Open-source Greenplum
+
+---
+
+<!-- *********************************************************** 
+
+     NOTE: this page comes from packages.html.src 
+
+     *********************************************************** -->
+
+<h2 class="title">Download</h2>
+
+<div class="well">
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active"><a href="#v5" aria-controls="v5" role="tab" data-toggle="tab"><strong>V5</strong></a></li>
+  </ul>
+  <hr>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="v5">
+
+      V5V5V5
+
+    </div>
+
+  </div>
+
+</div>
+
+<hr>

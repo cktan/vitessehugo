@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="generator" content="Hugo 0.29" />
+
+  <meta charset="utf-8">
+  <meta name="description" content="{{ .Page.Description }}">
+
+  <meta name="keywords" content="{{ .Page.Keywords }}">
+
+  {{ partial "global/head.html"}}
+
+  <title>{{ .Page.Title }}</title>
+
+</head>
+
+<body>
+{{ partial "global/nav.html"  }}
+
+<section class="wrap-md-t">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12 wrap-md-b">
+        <h1 class="title divider">{{ $.Page.Params.Headline }}</h1>
+
+        {{ if $.Page.Params.Subheadline }}
+        <p>{{ $.Page.Params.Subheadline }}</p>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="img-banner banner bg-eight banner-sm">
+  <div class="banner-wrap">
+  </div>
+</div>
+
+<section class="wrap-md  bg-lt-grey">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="row">
+          {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
+
+          {{ range $paginator.Pages }}
+          <div class="col-sm-12">
+            <div class="thumbnail post">
+              <div class="pull-right">
+                <time class="f-wt-n">{{ .Date.Format "Jan 2, 2006" }}</time>
+              </div>
+              <div class="post-cat text-capitalize">{{ if .Params.categories }}{{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="text-white">{{ . }}</a> {{end}}{{end}}</div>
+              <div class="caption f-wt-lt">
+
+                <h3 class="h5 f-wt-sb"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <p class="wrap-sm"><span class="f-wt-lt">by</span>
+                {{ if .Params.Author }} <span class="f-wt-n">{{ .Params.Author }}</span> {{ end }}</p>
+
+                {{ .Summary }}
+
+              <p class="wrap-sm"><a href="{{ .Permalink }}" ><small>Read more...</small></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            {{ template "_internal/pagination.html" . }}
+
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <section>
+          <h4 class="title">
+            Categories
+          </h4>
+
+          <ul class="list-unstyled text-capitalize">
+            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+              <li><a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+            {{ end }}
+          </ul>
+
+        </section>
+        <hr>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ .Content }}
+
+{{ partial "global/footer.html" . }}
+{{ partial "global/script.html" . }}
+</body>
+
+</html>
