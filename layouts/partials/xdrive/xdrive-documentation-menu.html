@@ -1,44 +1,44 @@
 <ul class="nav nav-stacked bg-lt-grey f-nav">
   <li>
-    <a {{ if eq .URL "/products/deepgreen-db/xdrive/" }} class="active"{{end}}
+    <a {{ if eq .Permalink "/products/deepgreen-db/xdrive/" }} class="active"{{end}}
      href='{{ "/products/deepgreen-db/xdrive" | relURL }}'><small>Introduction</small></a>
   </li>
 
   <li>
     <a
-      {{ if in .URL "quick-start" }} class="active"{{end}}
+      {{ if in .Permalink "quick-start" }} class="active"{{end}}
       href='{{ "/products/deepgreen-db/xdrive/quick-start" | relURL }}'><small>Quick Start</small></a>
   </li>
 
   <li>
     <a
-      {{ if in .URL "configuration" }} class="active"{{end}}
+      {{ if in .Permalink "configuration" }} class="active"{{end}}
       href='{{ "/products/deepgreen-db/xdrive/configuration" | relURL }}'><small>Configuration</small></a>
   </li>
 
   <li>
     <a
-      {{ if in .URL "deployment" }} class="active"{{end}}
+      {{ if in .Permalink "deployment" }} class="active"{{end}}
       href='{{ "/products/deepgreen-db/xdrive/deployment" | relURL }}'><small>Deployment</small></a>
   </li>
 
 
   <li>
     <a
-      {{ if in .URL "read-write" }} class="active"{{end}}
+      {{ if in .Permalink "read-write" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/read-write" | relURL }}'><small>Read/Write Data</small></a>
   </li>
 
   <!--
   <li>
     <a
-      {{ if in .URL "plugin-deploy" }} class="active"{{end}}
+      {{ if in .Permalink "plugin-deploy" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/plugin-deploy" | relURL }}'><small>Deploy a New Plugin</small></a>
   </li>
 
   <li>
     <a
-      {{ if in .URL "plugins" }} class="active"{{end}}
+      {{ if in .Permalink "plugins" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/plugins" | relURL }}'><small>Plugins</small></a>
   </li>
   -->
@@ -46,44 +46,44 @@
 
   <li>
     <a
-      {{ if in .URL "plugin-geode" }} class="active"{{end}}
+      {{ if in .Permalink "plugin-geode" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/plugin-geode" | relURL }}'><small>Plugin: Geode</small></a>
   </li>
 
   <li>
     <a
-      {{ if in .URL "plugin-jdbc" }} class="active"{{end}}
+      {{ if in .Permalink "plugin-jdbc" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/plugin-jdbc" | relURL }}'><small>Plugin: JDBC</small></a>
   </li>
 
   <li>
     <a
-      {{ if in .URL "plugin-fs" }} class="active"{{end}}
+      {{ if in .Permalink "plugin-fs" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/plugin-fs" | relURL }}'><small>Plugin: FS</small></a>
   </li>
 
   <li>
     <a
-      {{ if in .URL "plugin-hdfs" }} class="active"{{end}}
+      {{ if in .Permalink "plugin-hdfs" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/plugin-hdfs" | relURL }}'><small>Plugin: HDFS</small></a>
   </li>
 
   <li>
     <a
-      {{ if in .URL "plugin-s3" }} class="active"{{end}}
+      {{ if in .Permalink "plugin-s3" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/plugin-s3" | relURL }}'><small>Plugin: S3</small></a>
   </li>
   
   <li>
     <a
-      {{ if in .URL "plugin-kafka" }} class="active"{{end}}
+      {{ if in .Permalink "plugin-kafka" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/plugin-kafka" | relURL }}'><small>Plugin: Kafka</small></a>
   </li>
 
 <!--
   <li>
     <a
-      {{ if in .URL "plugin-orc-parquet" }} class="active"{{end}}
+      {{ if in .Permalink "plugin-orc-parquet" }} class="active"{{end}}
     href='{{ "/products/deepgreen-db/xdrive/plugin-orc-parquet" | relURL }}'><small>Plugin: Orc/Parquet</small></a>
   </li>
 -->

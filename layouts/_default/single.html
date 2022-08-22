@@ -58,10 +58,10 @@
         </div>
 
         <div class="row pager">
-          {{ $currentURL := .URL }}
+          {{ $currentURL := .Permalink }}
           {{ range where .Site.RegularPages "Type" "post" }}
 
-            {{ if eq $currentURL .URL }}
+            {{ if eq $currentURL .Permalink }}
 
               {{ if .PrevInSection }}
                 <div class="col-xs-6 pull-right text-right">

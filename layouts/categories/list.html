@@ -53,7 +53,7 @@
                 <div class="post-cat text-capitalize">{{ if .Params.categories }} {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="text-white">{{ . }}</a> {{end}}{{end}}</div>
                 <div class="caption f-wt-lt">
 
-                  <h3 class="h5 f-wt-sb"><a href="{{ .URL }}">{{ .Title }}</a></h3>
+                  <h3 class="h5 f-wt-sb"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
                 <p class="wrap-sm"><span class="f-wt-lt">by</span>
                   {{ if .Params.Author }} <span class="f-wt-n">{{ .Params.Author }}</span> {{ end }}</p>
 

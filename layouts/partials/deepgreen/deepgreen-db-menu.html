@@ -5,7 +5,7 @@
       <div class="col-md-8 col-md-offset-2 text-center">
 
         <ul class="list-inline nav nav-justified subNav">
-          {{ $currentPage := .URL }}
+          {{ $currentPage := .Permalink }}
 
           <li><a
                  {{if eq $currentPage "/products/deepgreen-db/"}}class="active"{{end}}

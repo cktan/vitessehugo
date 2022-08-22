@@ -1,5 +1,5 @@
 <ul class="nav nav-stacked bg-lt-grey f-nav">
-  {{ $subPage := .URL }}
+  {{ $subPage := .Permalink }}
   <li><a {{if in $subPage "/deepgreen-db-matrix/"}}class="active" {{end}} href="/products/deepgreen-db/features/deepgreen-db-matrix"><small>Feature Matrix</small></a></li>
   <li><a {{if in $subPage "/deepgreen-db-gpdb-compatibility/"}}class="active"{{end}} href="/products/deepgreen-db/features/deepgreen-db-gpdb-compatibility"><small>100% GPDB</small></a></li>
   <li><a {{if in $subPage "/deepgreen-db-decimal/"}}class="active"{{end}} href="/products/deepgreen-db/features/deepgreen-db-decimal"><small>Fast Decimal</small></a></li>

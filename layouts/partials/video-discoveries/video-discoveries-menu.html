@@ -5,7 +5,7 @@
       <div class="col-md-6 col-md-offset-3 text-center">
 
         <ul class="list-inline nav nav-justified subNav">
-          {{ $currentPage := .URL }}
+          {{ $currentPage := .Permalink }}
 
           <li><a
           {{if eq $currentPage "/solutions/video-discoveries/"}}class="active"{{end}}
